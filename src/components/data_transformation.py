@@ -16,7 +16,7 @@ import os
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path=os.path.join('artifacts','preprocessor.pk1')
+    preprocessor_obj_file_path=os.path.join('artifacts','preprocessor.pkl')
 
 class DataTransformation:
     def __init__(self):
@@ -98,7 +98,7 @@ class DataTransformation:
 
             ]
 
-            logging.info(f"aved preprocessing object")
+            logging.info(f"Saved preprocessing object")
 
             save_object(
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
